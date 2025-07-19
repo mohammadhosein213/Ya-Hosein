@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+  <link href="https://cdn.jsdelivr.net/npm/@fontsource/vazirmatn@latest/index.min.css" rel="stylesheet">
+  <meta charset="UTF-8">
+  <title>نوحه‌های مذهبی</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="search-box">
+        <input type="text" id="searchInput" placeholder="جستجو بر اساس عنوان مداحی">
+        <button id="searchButton">جستجو</button>
+      </div>
+
+
+  <header>
+    <h1>گلچین نوحه‌های مذهبی</h1>
+    <div class="controls">
+      <input type="text" id="searchInput" placeholder="جستجوی نوحه...">
+      <select id="categorySelect">
+        <option value="all">همه دسته‌ها</option>
+        <option value="moharram">محرم</option>
+        <option value="fatemieh">فاطمیه</option>
+        <option value="shahadat">شهادت</option>
+      </select>
+      <select id="maddahSelect" style="display: none;">
+        <option value="all">همه مداحان</option>
+        <option value="arz">حاج منصور ارضی</option>
+        <option value="azari">کربلایی حسن عطایی</option>
+        <option value="brumand">کربلایی امیر برومند</option>
+        <option value="eynifard">کربلایی حسین عینی فرد</option>
+        <option value="izadkhah">کربلایی حسین ایزدخواه</option>
+        <option value="karimi">حاج محمود کریمی</option>
+        <option value="nari">کربلایی سید رضا نریمانی</option>
+        <option value="raenayi">کربلایی مهدی رعنایی</option>
+        <option value="salmany">کربلایی علی سلمانی</option>
+        <option value="sib">کربلایی حسین سیب سرخی</option>
+        <option value="zakir">شهید سید جواد ذاکر</option>
+        <option value="alimy">کربلایی حمید علیمی</option>
+        <option value="banifatemeh">حاج سید مجید بنی فاطمه</option>
+      </select>
+      
+    </div>
+  </header>
+
+  <main id="noheList">
+    <section class="nohe" data-category="moharram" data-maddah="izadkhah" data-title="ایزدخواه - شب عاشورا">
+        <h2>کربلایی حسین ایزدخواه - شب عاشورا</h2>
+        <audio controls>
+          <source src="nohe/ذکر1.mp3" type="audio/mp3">
+        </audio>
+      </section>
+      
+
+    <section class="nohe" data-category="fatemieh" data-maddah="izadkhah" data-title="سید مجید بنی‌فاطمه - یازهرا">
+      <h2>سید مجید بنی‌فاطمه - یازهرا</h2>
+      <audio controls>
+        <source src="nohe/bani.mp3" type="audio/mp3">
+      </audio>
+    </section>
+
+    <section class="nohe" data-category="shahadat" data-maddah="izadkhah" data-title="حاج محمود کریمی - شهادت حضرت علی">
+      <h2>حاج محمود کریمی - شهادت حضرت علی</h2>
+      <audio controls>
+        <source src="nohe/taheri.mp3" type="audio/mp3">
+      </audio>
+    </section>
+  </main>
+
+  <footer>
+    <p>© یازهرا سایت نوحه مذهبی</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
